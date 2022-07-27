@@ -21,7 +21,7 @@ public class Test2 {
         que[2][4] = "4. other";
 
         int correctAnswersCounter = printQueAndCheckAns(que, queResult);
-        System.out.println("Тест завершён! \nРезультат: Правильно - " + correctAnswersCounter + ". Неправильно - " + (3 - correctAnswersCounter));
+        System.out.println("Тест завершён! \nРезультат: Правильно - " + correctAnswersCounter + ". Неправильно - " + (que.length - correctAnswersCounter));
     }
 
     public static Integer printQueAndCheckAns(String[][] que, int queResult) {
