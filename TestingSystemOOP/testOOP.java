@@ -3,16 +3,16 @@ import java.util.Scanner;
 
 public class testOOP {
     public static void main(String[] args) {
-        Question question1 = new Question("В файл с каким расширением компилируется java-файл?",
+        Question question1 = new Question("Р’ С„Р°Р№Р» СЃ РєР°РєРёРј СЂР°СЃС€РёСЂРµРЅРёРµРј РєРѕРјРїРёР»РёСЂСѓРµС‚СЃСЏ java-С„Р°Р№Р»?",
                 "1. cs", "2. java", "3. class", "4. exe", 3);
         int counter = checkAnswer(question1);
-        Question question2 = new Question("С помощью какой команды git можно получить полную копию удаленного репозитория?",
+        Question question2 = new Question("РЎ РїРѕРјРѕС‰СЊСЋ РєР°РєРѕР№ РєРѕРјР°РЅРґС‹ git РјРѕР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ РїРѕР»РЅСѓСЋ РєРѕРїРёСЋ СѓРґР°Р»РµРЅРЅРѕРіРѕ СЂРµРїРѕР·РёС‚РѕСЂРёСЏ?",
                 "1. commit", "2. push","3. clone","4. copy",3);
         counter += checkAnswer(question2);
-        Question question3 = new Question("Какой применяется цикл, когда неизвестно кол-во итераций?",
+        Question question3 = new Question("РљР°РєРѕР№ РїСЂРёРјРµРЅСЏРµС‚СЃСЏ С†РёРєР», РєРѕРіРґР° РЅРµРёР·РІРµСЃС‚РЅРѕ РєРѕР»-РІРѕ РёС‚РµСЂР°С†РёР№?",
                 "1. while", "2. for","3. loop","4. other",1);
         counter += checkAnswer(question3);
-        System.out.println("Тест завершён! \nРезультат: Правильно - " + counter + ". Неправильно - " + (Question.getQuestionCounter() - counter));
+        System.out.println("РўРµСЃС‚ Р·Р°РІРµСЂС€С‘РЅ! \nР РµР·СѓР»СЊС‚Р°С‚: РџСЂР°РІРёР»СЊРЅРѕ - " + counter + ". РќРµРїСЂР°РІРёР»СЊРЅРѕ - " + (Question.getQuestionCounter() - counter));
     }
 
     public static int checkAnswer(Question object){
@@ -22,11 +22,11 @@ public class testOOP {
         System.out.println(object);
         int answer = sc.nextInt();
         if (answer == correctAnswer) {
-            System.out.println("Правильно!");
+            System.out.println("РџСЂР°РІРёР»СЊРЅРѕ!");
             ++counter;
         }
         else {
-            System.out.println("Неправильно!");
+            System.out.println("РќРµРїСЂР°РІРёР»СЊРЅРѕ!");
         }
         return counter;
     }

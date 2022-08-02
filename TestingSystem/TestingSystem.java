@@ -4,24 +4,24 @@ public class TestingSystem {
     public static void main(String[] args) {
         int queResult = 0;
         String[][] que = new String[3][5];
-        que[0][0] = "В файл с каким расширением компилируется java-файл?";
+        que[0][0] = "Р’ С„Р°Р№Р» СЃ РєР°РєРёРј СЂР°СЃС€РёСЂРµРЅРёРµРј РєРѕРјРїРёР»РёСЂСѓРµС‚СЃСЏ java-С„Р°Р№Р»?";
         que[0][1] = "1. cs";
         que[0][2] = "2. java";
         que[0][3] = "3. class";
         que[0][4] = "4. exe";
-        que[1][0] = "С помощью какой команды git можно получить полную копию удаленного репозитория?";
+        que[1][0] = "РЎ РїРѕРјРѕС‰СЊСЋ РєР°РєРѕР№ РєРѕРјР°РЅРґС‹ git РјРѕР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ РїРѕР»РЅСѓСЋ РєРѕРїРёСЋ СѓРґР°Р»РµРЅРЅРѕРіРѕ СЂРµРїРѕР·РёС‚РѕСЂРёСЏ?";
         que[1][1] = "1. commit";
         que[1][2] = "2. push";
         que[1][3] = "3. clone";
         que[1][4] = "4. copy";
-        que[2][0] = "Какой применяется цикл, когда неизвестно кол-во итераций?";
+        que[2][0] = "РљР°РєРѕР№ РїСЂРёРјРµРЅСЏРµС‚СЃСЏ С†РёРєР», РєРѕРіРґР° РЅРµРёР·РІРµСЃС‚РЅРѕ РєРѕР»-РІРѕ РёС‚РµСЂР°С†РёР№?";
         que[2][1] = "1. while";
         que[2][2] = "2. for";
         que[2][3] = "3. loop";
         que[2][4] = "4. other";
 
         int correctAnswersCounter = printQueAndCheckAns(que, queResult);
-        System.out.println("Тест завершён! \nРезультат: Правильно - " + correctAnswersCounter + ". Неправильно - " + (que.length - correctAnswersCounter));
+        System.out.println("РўРµСЃС‚ Р·Р°РІРµСЂС€С‘РЅ! \nР РµР·СѓР»СЊС‚Р°С‚: РџСЂР°РІРёР»СЊРЅРѕ - " + correctAnswersCounter + ". РќРµРїСЂР°РІРёР»СЊРЅРѕ - " + (que.length - correctAnswersCounter));
     }
 
     public static Integer printQueAndCheckAns(String[][] que, int queResult) {
@@ -46,11 +46,11 @@ public class TestingSystem {
         Scanner sc = new Scanner(System.in);
         int answer = sc.nextInt();
         if (answer == correctAnswer) {
-            System.out.println("Правильно!");
+            System.out.println("РџСЂР°РІРёР»СЊРЅРѕ!");
             return true;
         }
         else {
-            System.out.println("Неправильно!");
+            System.out.println("РќРµРїСЂР°РІРёР»СЊРЅРѕ!");
             return false;
         }
     }
