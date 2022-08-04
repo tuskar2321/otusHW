@@ -25,9 +25,9 @@ class Question {
     public String printArrAnswer(){
         StringBuilder answers = new StringBuilder();
         for (String i:answer){
-            answers.append(i + "\n");
+            answers.append(i).append("\n");
         }
-        answers.delete((answers.length()-2), answers.length());
+        answers.delete((answers.length()-1), answers.length());
         return (answers.toString());
     }
 
