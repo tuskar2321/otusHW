@@ -12,7 +12,7 @@ public class Main {
             put(new Client("Константин"), new Account(279459));
         }});
 
-        clients.getAccounts(clients, new Client("Владимир"));
-        clients.findClient(clients, new Account(164953));
+        clients.getAccounts(clients, new Client("Евгений"));
+        clients.findClient(clients, new Account(604849));
     }
 }

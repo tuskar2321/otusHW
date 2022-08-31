@@ -12,7 +12,7 @@ public class Bank {
         int counter = 0;
         for (Map.Entry<Client, Account> entry : clients.clientsInfo.entrySet()){
             if (entry.getKey().equals(match)){
-                System.out.println("Клиент " + match.getName() + " найден! А вот и его доступные счета: " + entry.getValue().accounts.toString());
+                System.out.println("Клиент " + match.getName() + " найден! А вот и его доступные счета: " + entry.getValue().getAccounts().toString());
                 ++counter;
             }
         }
@@ -23,7 +23,7 @@ public class Bank {
 
     public void findClient(Bank clients, Account match){
         int counter = 0;
-        int accId = match.accounts.get(0);
+        int accId = match.getAccounts().get(0);
 
         for(Map.Entry<Client, Account> entry : clients.clientsInfo.entrySet()){
             if (entry.getValue().getAccounts().contains(accId)){
