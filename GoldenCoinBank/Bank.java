@@ -12,12 +12,12 @@ public class Bank {
         int counter = 0;
         for (Map.Entry<Client, Account> entry : clients.clientsInfo.entrySet()){
             if (entry.getKey().equals(match)){
-                System.out.println("Клиент " + match.getName() + " найден! А вот и его доступные счета: " + entry.getValue().accounts.toString());
+                System.out.println("РљР»РёРµРЅС‚ " + match.getName() + " РЅР°Р№РґРµРЅ! Рђ РІРѕС‚ Рё РµРіРѕ РґРѕСЃС‚СѓРїРЅС‹Рµ СЃС‡РµС‚Р°: " + entry.getValue().accounts.toString());
                 ++counter;
             }
         }
         if (counter == 0) {
-        System.out.println("Клиент с именем " + match.getName() + " не обнаружен :с");
+        System.out.println("РљР»РёРµРЅС‚ СЃ РёРјРµРЅРµРј " + match.getName() + " РЅРµ РѕР±РЅР°СЂСѓР¶РµРЅ :СЃ");
         }
     }
 
@@ -27,12 +27,12 @@ public class Bank {
 
         for(Map.Entry<Client, Account> entry : clients.clientsInfo.entrySet()){
             if (entry.getValue().getAccounts().contains(accId)){
-                System.out.println("Найден клиент с номером счета " + match.getAccounts() + " . Его имя - " + entry.getKey().getName());
+                System.out.println("РќР°Р№РґРµРЅ РєР»РёРµРЅС‚ СЃ РЅРѕРјРµСЂРѕРј СЃС‡РµС‚Р° " + match.getAccounts() + " . Р•РіРѕ РёРјСЏ - " + entry.getKey().getName());
             ++counter;
             }
         }
         if (counter == 0) {
-            System.out.println("Клиент с номером счета " + match.getAccounts() + " не обнаружен :с");
+            System.out.println("РљР»РёРµРЅС‚ СЃ РЅРѕРјРµСЂРѕРј СЃС‡РµС‚Р° " + match.getAccounts() + " РЅРµ РѕР±РЅР°СЂСѓР¶РµРЅ :СЃ");
         }
     }
 }

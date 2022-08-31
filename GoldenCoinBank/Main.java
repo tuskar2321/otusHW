@@ -5,14 +5,14 @@ public class Main {
 
         Bank clients = new Bank(new HashMap<Client, Account>()
         {{
-            put(new Client("Алексей"), new Account(866352, 647291));
-            put(new Client("Владимир"), new Account(164953, 604849, 102742));
-            put(new Client("Всеволод"), new Account(872450));
-            put(new Client("Николай"), new Account(431270, 452178));
-            put(new Client("Александр"), new Account(279459));
+            put(new Client("РђР»РµРєСЃРµР№"), new Account(866352, 647291));
+            put(new Client("Р’Р»Р°РґРёРјРёСЂ"), new Account(164953, 604849, 102742));
+            put(new Client("Р’СЃРµРІРѕР»РѕРґ"), new Account(872450));
+            put(new Client("Р•РІРіРµРЅРёР№"), new Account(431270, 452178));
+            put(new Client("РљРѕРЅСЃС‚Р°РЅС‚РёРЅ"), new Account(279459));
         }});
 
-        clients.getAccounts(clients, new Client("Владимир"));
+        clients.getAccounts(clients, new Client("Р’Р»Р°РґРёРјРёСЂ"));
         clients.findClient(clients, new Account(164953));
     }
 }
