@@ -4,7 +4,7 @@ import java.util.Map;
 public class Bank {
     HashMap<Client, Account> clientsInfo;
 
-    public Bank(HashMap <Client, Account> clients) {
+    Bank(HashMap <Client, Account> clients) {
         this.clientsInfo = clients;
     }
 
@@ -27,7 +27,7 @@ public class Bank {
 
         for(Map.Entry<Client, Account> entry : clients.clientsInfo.entrySet()){
             if (entry.getValue().getAccounts().contains(accId)){
-                System.out.println("Найден клиент с номером счета " + match.getAccounts() + " . Его имя - " + entry.getKey().getName());
+                System.out.println("Найден клиент с номером счета " + match.getAccounts() + ". Его имя - " + entry.getKey().getName());
             ++counter;
             }
         }
